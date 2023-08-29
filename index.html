@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form action="" class="calculatorform" name="calculatorform" >
+                                                                                    <table id="calcu">
+                                                                                        <tr>
+                    <td colspan="3">
+                        <input type="text" id="result" name="screen" class="screen" >
+                    </td>
+                    <td><input type="button" value="clear" onclick="Clear()"></td>
+                    <td><input type="button" value="X" onclick="Backspace()"></td>
+                </tr>
+          
+                <tr>
+                    <td><input type="button" class="calcButton" value="1" onclick="valuebutton(this)"></td>
+                    <td><input type="button" class="calcButton" value="2" onclick="valuebutton(this)"></td>
+                    <td><input type="button" class="calcButton" value="3" onclick="valuebutton(this)"></td>
+                    <td><input type="button" class="calcButton" value="/" onclick="valuebutton(this)"></td>
+                    <td><input type="button" class="calcButton" value="Square" onclick="square()"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" class="calcButton" value="4" onclick="valuebutton(this)"></td>
+                    <td><input type="button" class="calcButton" value="5" onclick="valuebutton(this)"></td>
+                    <td><input type="button" class="calcButton" value="6" onclick="valuebutton(this)"></td>
+                    <td><input type="button" value="*" onclick="valuebutton(this)"></td>
+                    <td><input type="button" value="Cube" onclick="cube()"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" class="calcButton" value="7" onclick="valuebutton(this)"></td>
+                    <td><input type="button" class="calcButton" value="8" onclick="valuebutton(this)"></td>
+                    <td><input type="button" class="calcButton" value="9" onclick="valuebutton(this)"></td>
+                    <td><input type="button" value="-" onclick="valuebutton(this)"></td>
+                    <td><input type="button" value="Sqrt" onclick="sqrt()"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="0" onclick="valuebutton(this)"></td>
+                    <td><input type="button" value="." onclick="valuebutton(this)"></td>
+                    <td><input type="button" value="=" onclick="calculate(this)"></td>
+                    <td><input type="button" value="+" onclick="valuebutton(this)"></td>
+                    <td><input type="button" value="%" onclick="valuebutton(this)"></td>
+                </tr>
+                <tr>
+                    <td class="xy">
+                        <!-- <input type="button" id="power" value="" class="screen1"> -->
+                        <input type="button" value="xy" onclick="valuebutton(this)">
+                        <!-- <button>x <sup>y</sup></button> -->
+                    </td>
+                </tr>
+            </table>
+
+        </form>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
